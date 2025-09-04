@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "fleet_locations": {
+      "$driverId": {
+        ".read": "auth != null && (auth.uid == $driverId || auth.token.role == 'manager')",
+        ".write": "auth != null && auth.uid == $driverId",
+        ".validate": "newData.hasChildren(['latitude', 'longitude', 'timestamp']) && newData.child('latitude').isNumber() && newData.child('longitude').isNumber() && newData.child('timestamp').isNumber()"
+      }
+    },
+    "sos_alerts": {
+      "$alertId": {
+        ".read": "auth != null && (auth.uid == $alertId || auth.token.role == 'manager')",
+        ".write": "auth != null && auth.uid == $alertId",
+        ".validate": "newData.hasChildren(['driverId', 'location', 'timestamp'])"
+      }
+    }
+  }
+}

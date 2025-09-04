@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "816213246165",
+    "firebase_url": "https://vtrack-fleet-management-app-default-rtdb.firebaseio.com",
+    "project_id": "vtrack-fleet-management-app",
+    "storage_bucket": "vtrack-fleet-management-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816213246165:android:08cf3014dc1e3d32b1a25c",
+        "android_client_info": {
+          "package_name": "com.example.fleet_driver_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQRZrx7M231fTFAcUEkAh7yl8meu2Eko0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

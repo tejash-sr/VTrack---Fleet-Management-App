@@ -1,0 +1,65 @@
+name: fleet_driver_app
+description: Fleet Management Driver App
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase - Updated to compatible versions
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.4.0
+  firebase_storage: ^12.3.0
+  firebase_database: ^11.2.0
+  
+  # Location & Maps
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  flutter_map: ^8.0.0
+  latlong2: ^0.9.1
+  
+  # Image & File handling
+  image_picker: ^1.0.4
+  path_provider: ^2.1.1
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # UI & Utils
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.9
+  lottie: ^2.7.0
+  permission_handler: ^11.1.0
+  url_launcher: ^6.2.2
+  
+  # HTTP & Network
+  http: ^1.1.2
+  connectivity_plus: ^6.1.5
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  
+  # Utils
+  intl: ^0.20.2
+  uuid: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
